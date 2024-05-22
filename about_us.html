@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>About us</title>
+		<link rel="stylesheet" href="stilus.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script>
+			
+			function removeClassIfSmallScreen() {
+				var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+				var xSize = 1000; 
+		
+				if (screenWidth < xSize) {
+					var element = document.getElementById('content');
+					element.classList.remove('w3-display-middle');
+					var x = document.getElementById("footer");
+					x.remove()
+				}
+			}
+		
+			
+			removeClassIfSmallScreen();
+			window.addEventListener('resize', removeClassIfSmallScreen);
+			window.addEventListener('load', removeClassIfSmallScreen);
+		</script>
+		
+	</head>
+	<body>
+		<div class="container">
+			<header class="w3-container w3-gray">
+				<img src="logo.png" alt="logo" class="headerlogo">
+			</header>
+			<div class="w3-bar w3-black">
+				<a href="index.html" class="w3-bar-item w3-button">Home</a>
+				<a href="#" class="w3-bar-item w3-button">About Us</a>
+				<a href="contact.html" class="w3-bar-item w3-button">Contact Us</a>
+				<a href="portfolio.html" class="w3-bar-item w3-button">Portfolio Page</a>
+			</div>
+			<main class="w3-container">
+				<div class="w3-display-middle" id="content">
+					<h2>About Us</h2>
+					<hr>
+					<p>
+						About Us
+
+Welcome to Dynamic Entertainment, where creativity meets innovation. As a premier marketing company, we specialize in crafting compelling marketing and branding strategies tailored specifically for the entertainment and technology industries.
+
+Our Mission
+
+At Dynamic Entertainment, our mission is to bridge the gap between cutting-edge technology and captivating entertainment. We strive to elevate brands by creating memorable experiences that resonate with audiences and drive engagement.
+					</p>
+				</div>
+			</main>
+		</div>
+		<footer class="w3-display-bottommiddle w3-container w3-black" id="footer">
+			<h1>FOOTER</h1>
+		</footer>
+	</body>
+</html>
+
+
+
